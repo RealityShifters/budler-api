@@ -1,0 +1,18 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+  - name: budler-api
+    path: .
+    commands:
+      run: true
+    watcher:
+      extensions:
+        - go
+      paths:
+        - /
+      ignored_paths:
+        - .git
+        - .realize
+        - vendor
